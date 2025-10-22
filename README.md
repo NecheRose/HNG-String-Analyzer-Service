@@ -33,7 +33,7 @@ This project is the Stage 1 submission for the **HNG 13 Backend Development Inte
 ## 🌐 Live Demo
 
 **View the hosted project:**  
-[🔗 HNG-String-Analyzer-Service]() 
+[🔗 HNG-String-Analyzer-Service](https://hng-string-analyzer-service-production.up.railway.app) 
 
 ---
 
