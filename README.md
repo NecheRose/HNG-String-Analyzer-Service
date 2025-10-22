@@ -65,10 +65,10 @@ This will install the following dependencies:
 | Package                | Purpose                                              |
 | ---------------------- | ---------------------------------------------------- |
 | **express**            | Web framework for building the API                   |
-| **axios**              | Makes HTTP requests to the Cat Facts API             |
+| **mongodb**            | Persistent storage for data                          |
 | **cors**               | Enables Cross-Origin Resource Sharing                |
 | **dotenv**             | Loads environment variables                          |
-| **express-rate-limit** | Protects against too many requests                   |
+| **mongoose**           | Connects the application to the database             |
 | **nodemon** (dev)      | Automatically restarts the server during development |
 
 ---
