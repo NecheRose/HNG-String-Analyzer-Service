@@ -24,9 +24,19 @@ app.get("/health", (req, res) => {
 // Routes
 app.use("/strings", stringRouter);
 
-// Handle unknown routes
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found" });
+// Home page
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Welcome to the HNG String Analyzer Service API",
+    endpoints: {
+      analyze: "POST /strings",
+      getAllWithFilters: "GET /strings",
+      getSpecific: "GET /strings/:string_value",
+      delete: "DELETE /strings/:string_value",
+      naturalLanguageFilter: "GET /strings/filter-by-natural-language?query=<your query>"
+    },
+    documentation: "https://github.com/NecheRose/HNG-String-Analyzer-Service"
+  });
 });
 
 // Start server
